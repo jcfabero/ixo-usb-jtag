@@ -89,6 +89,21 @@ The code needs optimization; yet it is merely a proof of concept.
  * hw_xpcu_i: Access "internal" chain (the XPCU CPLD, IC3, itself)
  * hw_xpcu_x: Access "external" chain (the Spartan 3E, PROM, etc.)
 
+
+## nanoDLA Logic Analyzer
+
+This is a low cost logic analyzer made with FX2. Since its input channels are
+equipped only with dumping resistors, it is able to use them for output aswell.
+Supported through the usbjtag-nanodla.hex firmware.
+
+ * CH.0: TMS
+ * CH.2: TDI
+ * CH.4: TDO
+ * CH.6: TCK
+
+More information about nanoDLA can be found at https://github.com/wuxx/nanoDLA/
+
+
 ## Adapting the code to your hardware
 
 As is, the code assumes the following pin assignment:
